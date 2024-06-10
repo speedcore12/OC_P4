@@ -10,12 +10,18 @@
     <meta name="author" content="Nina Carducci">
     <meta name="robots" content="index, follow"> 
 
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+	<!-- Différer le chargement des CSS non critiques -->
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" media="print" onload="this.onload=null;this.media='all'">
+	<noscript><link rel="stylesheet" href="./assets/bootstrap/bootstrap.css"></noscript>
+	<link rel="stylesheet" href="./assets/style.css" media="print" onload="this.onload=null;this.media='all'">
+	<noscript><link rel="stylesheet" href="./assets/style.css"></noscript>
 
+	<!-- Précharger les polices Google -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" media="print" onload="this.onload=null;this.media='all'">
+	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"></noscript>
 
 	<!-- Preload LCP image and other carousel images -->
 	<link rel="preload" as="image" href="./assets/images/slider/ryoji-iwata.webp">
