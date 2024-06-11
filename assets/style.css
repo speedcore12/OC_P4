@@ -108,6 +108,11 @@ nav a {
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
+
+.nav-item{
+	cursor: pointer;
+}
+
 .nav-pills .nav-link {
 	color: #000
 }
