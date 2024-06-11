@@ -13,3 +13,14 @@ $(document).ready(function() {
         tagsPosition: 'top'
     });
 });
+
+
+$(document).ready(function() {
+    $('.nav-link').on('click', function() {
+        // Retirer la classe 'active' de tous les éléments
+        $('.nav-link').removeClass('active');
+
+        // Ajouter la classe 'active' à l'élément cliqué
+        $(this).addClass('active');
+    });
+});
