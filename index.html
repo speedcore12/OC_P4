@@ -41,7 +41,28 @@
 
     <title>Nina Carducci - Photographe professionnelle</title>
 
-    <script type="application/ld+json" src="schemaorg-current-https.jsonld"></script>
+    <!-- Intégration directe du JSON-LD -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Nina Carducci",
+            "image": "https://speedcore12.github.io/assets/images/nina.webp",
+            "jobTitle": "Photographe professionnelle",
+            "description": "Nina Carducci est une photographe passionnée. Découvrez son portfolio, ses services et contactez-la pour vos besoins en photographie.",
+            "url": "https://speedcore12.github.io/",
+            "sameAs": [
+                "https://www.instagram.com/ninacarducci.photo/?hl=fr"
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "3 rue des Jardins",
+                "addressLocality": "Bordeaux",
+                "postalCode": "33000",
+                "addressCountry": "FR"
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
