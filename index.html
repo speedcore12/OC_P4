@@ -43,15 +43,16 @@
 
     <title>Nina Carducci - Photographe professionnelle</title>
 
-    <!-- Intégration directe du JSON-LD -->
-    <script type="application/ld+json">
+    
+
+<!-- Intégration du JSON-LD -->
+<script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Nina Carducci",
-        "image": "https://speedcore12.github.io/assets/images/nina.webp",
         "jobTitle": "Photographe professionnelle",
-        "description": "Nina Carducci est une photographe passionnée. Découvrez son portfolio, ses services et contactez-la pour vos besoins en photographie.",
+        "image": "https://speedcore12.github.io/assets/images/nina.webp",
         "url": "https://speedcore12.github.io/",
         "sameAs": [
             "https://www.instagram.com/ninacarducci.photo/?hl=fr"
@@ -60,11 +61,70 @@
             "@type": "PostalAddress",
             "streetAddress": "3 rue des Jardins",
             "addressLocality": "Bordeaux",
+            "addressRegion": "Nouvelle-Aquitaine",
             "postalCode": "33000",
             "addressCountry": "FR"
         }
     }
+    </script>    
+    
+    <!-- Données enrichies pour les services -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Shooting photo",
+        "provider": {
+            "@type": "Person",
+            "name": "Nina Carducci"
+        },
+        "areaServed": {
+            "@type": "Place",
+            "name": "Île-de-France"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "350",
+            "priceCurrency": "EUR",
+            "description": "Pour capturer vos moments les plus précieux et garder un souvenir impérissable."
+        }
+    }
     </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Retouches",
+        "provider": {
+            "@type": "Person",
+            "name": "Nina Carducci"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "50",
+            "priceCurrency": "EUR",
+            "description": "Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficiez d’un rendu optimal pour vos publications."
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Album photos",
+        "provider": {
+            "@type": "Person",
+            "name": "Nina Carducci"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "400",
+            "priceCurrency": "EUR",
+            "description": "Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé."
+        }
+    }
+    </script>    
+
 </head>
 <body>
     <header>
